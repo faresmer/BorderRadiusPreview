@@ -64,8 +64,9 @@ function BorderRadius(){
 
     
     <button className="get-button" onClick={getResult}>GET</button>
-    <div className="result" style={{borderRadius:`${top}px ${right}px ${bottom}px ${left}px`}}></div>
-    <span id="toCopy">{'{'} border-radius: {top}px {right}px {bottom}px {left}px ;{'}'}</span><sub><button className="copy-button" onClick={copyToClipboard}>📋</button></sub>
+    <div className="result" style={{borderRadius:`${top}px ${right}px ${bottom}px ${left}px`}}>
+        <span id="toCopy">{'{'} border-radius: {top}px {right}px {bottom}px {left}px ;{'}'}</span><sub><button className="copy-button" onClick={copyToClipboard}>📋</button></sub>
+    </div>
     </>)
 }
 

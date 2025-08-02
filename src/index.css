@@ -83,12 +83,22 @@ button.copy-button{
 }
 
 div.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
   height: 10rem;
   width: 25rem;
   background: linear-gradient(to right, purple, green);
-  background-size: 200% 200%; /* Needed for movement */
-  animation: moveBg 10s ease infinite;
+  background-size: 200% 200%;
+  animation: moveBg 5s ease infinite;
   transition: border-radius 2s ease;
+}
+
+#toCopy {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-right: 0.5rem;
 }
 
 
