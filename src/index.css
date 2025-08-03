@@ -87,6 +87,7 @@ div.result {
 
 #top{
   width:25rem;
+  margin: 1rem auto;
   display: grid;
   place-items: center;
 
@@ -94,6 +95,16 @@ div.result {
 
 #bottom{
   width:25rem;
+  margin: 1rem auto;
   display: grid;
   place-items: center;
+}
+
+.result-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* fixed distance between left, result, and right */
+  margin: 1rem auto;
+  width: fit-content;
 }
