@@ -3,39 +3,8 @@ body{
     font-family: Arial, sans-serif;
 }
 
-input{
-    width: 100%;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1rem;
-
-    transition: border-color 0.3s ease;
-    transition: box-shadow 0.3s ease;
-    &:focus{
-        border-color: darkorange;
-        box-shadow: 10px 10px 10px 5px darkorange;
-        outline: none;
-    }
-
-    &:hover{
-        border-color: darkorange;
-    }
 
 
-}
-
-label{
-
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    color: #333;
-
-    
-}
 
 h2{
     text-align: center;
@@ -92,7 +61,7 @@ div.result {
   background: linear-gradient(to right, purple, green);
   background-size: 200% 200%;
   animation: moveBg 5s ease infinite;
-  transition: border-radius 2s ease;
+  transition: border-radius 0s ease;
 }
 
 #toCopy {
@@ -101,7 +70,41 @@ div.result {
   margin-right: 0.5rem;
 }
 
+.result-box{
+  display: flex;
+}
 
+#right{
+  rotate: 90deg;
+  width: 10rem;
+}
 
+#left{
+  margin-right: 0;
+  width: 10rem;
+  rotate: -90deg;
+}
 
+#top{
+  width:25rem;
+  margin: 1rem auto;
+  display: grid;
+  place-items: center;
 
+}
+
+#bottom{
+  width:25rem;
+  margin: 1rem auto;
+  display: grid;
+  place-items: center;
+}
+
+.result-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* fixed distance between left, result, and right */
+  margin: 1rem auto;
+  width: fit-content;
+}
